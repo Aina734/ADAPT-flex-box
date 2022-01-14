@@ -1,0 +1,395 @@
+@font-face {
+    font-family:'Courgette';
+    src: url(https://fonts.gstatic.com/s/courgette/v8/wEO_EBrAnc9BLjLQAUk1VvoK.woff2) format('woff2');
+}
+    @font-face {
+    font-family:'Josefin Sans';
+    src: url(https://fonts.gstatic.com/s/josefinsans/v17/Qw3EZQNVED7rKGKxtqIqX5EUCEx6XHg.woff2) format('woff2');
+    src: url(https://fonts.gstatic.com/s/josefinsans/v17/Qw3EZQNVED7rKGKxtqIqX5EUCEx6XHg.woff2) format('woff2');
+    src: url(https://fonts.gstatic.com/s/josefinsans/v17/Qw3aZQNVED7rKGKxtqIqX5EUDXx4.woff2) format('woff2');
+    src: url(https://fonts.gstatic.com/s/josefinsans/v17/Qw3aZQNVED7rKGKxtqIqX5EUDXx4.woff2) format('woff2');
+    }
+    @font-face {
+     font-family:'Mate SC';
+    src: url(https://fonts.gstatic.com/s/matesc/v11/-nF8OGQ1-uoVr2wK-iLT9g.woff2) format('woff2');
+    }
+    @font-face {
+    font-family:'Merienda';
+    src: url(https://fonts.gstatic.com/s/merienda/v9/gNMHW3x8Qoy5_mf8uWMFMIo.woff2) format('woff2');
+    }
+    @font-face {
+    font-family:'Roboto Slab';
+    src: url(https://fonts.gstatic.com/s/robotoslab/v13/BngMUXZYTXPIvIBgJJSb6ufN5qU.woff2) format('woff2');
+    src: url(https://fonts.gstatic.com/s/robotoslab/v13/BngMUXZYTXPIvIBgJJSb6ufN5qU.woff2) format('woff2');
+    src: url(https://fonts.gstatic.com/s/robotoslab/v13/BngMUXZYTXPIvIBgJJSb6ufN5qU.woff2) format('woff2');
+    }
+    @font-face {
+    font-family:'Source Serif Pro';
+    src: url(https://fonts.gstatic.com/s/sourceserifpro/v11/neIWzD-0qpwxpaWvjeD0X88SAOeauXEOoguP.woff2) format('woff2');
+    src: url(https://fonts.gstatic.com/s/sourceserifpro/v11/neIVzD-0qpwxpaWvjeD0X88SAOeauXEGGS6axq0r.woff2) format('woff2');
+    src: url(https://fonts.gstatic.com/s/sourceserifpro/v11/neIQzD-0qpwxpaWvjeD0X88SAOeauXQ-oA.woff2) format('woff2');
+    src: url(https://fonts.gstatic.com/s/sourceserifpro/v11/neIXzD-0qpwxpaWvjeD0X88SAOeasc8btSyqxA.woff2) format('woff2')
+}
+/* basic format styles thougth for phone devices screen of 480 px*/
+* {
+    padding: 0;
+    margin: 0;
+    color: #e6e6e6;
+}
+html {
+    width: 100%;
+    background-image: linear-gradient(230deg,black, #0a061a,#0d40ad,#0a061a, black);
+    background-size: 100%;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+ li {
+list-style:none;
+}
+img {
+    width: 100%;
+}
+header {
+    display: inline-block;
+    width: 104%;
+    background-color: #e6e6e6;
+    background-attachment: fixed;
+    border-bottom: solid .3em rgb(124, 9, 15);
+    
+}
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    margin-right: 2%;
+    margin-top: 2%;
+}
+
+ a {
+    margin-left: 2em;
+    text-decoration: none;
+    color: rgb(145, 12, 18);
+    font-family: 'Roboto Slab';
+    
+}
+/*a:hover {
+    background-color: rgb(27, 26, 26);
+    border-radius: 50%;
+    border: .3em solid rgba(0, 111, 202, 0.842);
+}*/
+main {
+    display: flex;
+    flex-direction:column;
+}
+h1, h3 {
+text-align: center;
+}
+h3 {
+    font-family: 'Merienda';
+    margin-top: 5%;
+}
+h1 {
+    font-family: 'Mate SC';
+}
+p {
+    font-family: 'Josefin Sans';
+    padding: 5%;
+    line-height: 1.2em;
+    word-spacing: .4em;
+    text-align: center;
+}
+#siglas {
+    text-align: center;
+    font-family: 'Mate SC';
+    letter-spacing: .13em;
+}
+.banner {
+    text-align: center;
+}
+.banner h2 {
+ font-family: 'Courgette';
+ border-bottom: .2em double rgb(100, 2, 15);
+ border-bottom-left-radius:  50%;
+ border-bottom-right-radius: 50%;
+ box-shadow: 0 .2em 0 rgb(6, 125, 223);
+ padding: 10% 10% 5% 10%;
+ margin-bottom: 10%;
+ margin-top: 5%; 
+
+}
+#employee {
+    width: 100%;
+    display:flex;
+    flex-grow: 1.2;
+    flex-shrink: 1;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-basis: 50%;
+}
+
+#employee figure {
+    width: 13%;
+    height: auto; 
+    margin-top: 5em;
+    margin-bottom: 4em;
+}
+figcaption {
+    font-family: 'Josefin Sans';
+    text-align: center;
+    line-height: 1.3em;
+    word-spacing: .3em;
+    margin-left: .7em;
+}
+
+footer nav {
+    width: 101.4%;
+    background-color: #e6e6e6;
+    padding: 1.3%;
+    border-top: solid .3em rgb(124, 9, 15);
+    
+}
+
+footer p {
+    background-color:#3c414d;
+    font-family: 'Source Serif Pro';
+    text-align: left;
+    padding: 1% 2%;
+    width: 100%;
+   
+}
+.decor {
+opacity: .75;
+}
+.nav {
+    padding-top: .5em;
+    width: 10%;
+    float: left;
+}
+#company {
+    margin-top: 5%;
+    padding: 3%; 
+}
+/* Ajustment of media queries for devices*/
+
+/*small phones*/
+
+@media only screen  and (max-width: 430px) and (min-width: 320px) {
+    a {
+        font-size: .8em;
+        margin-left:1em;
+    }
+    #employee figure {
+        width:20%;
+        height: auto;
+        margin-top: 2em;
+    }
+figcaption {
+    font-size: .5em;
+}
+footer p {
+    font-size: .7em;
+    letter-spacing: .1em;
+}
+}
+/* normal to big screen phones 'same as the base*/
+@media only screen  and (min-width: 480px) {
+    * {
+        padding: 0;
+        margin: 0;
+        color: #e6e6e6;
+    }
+    html {
+        width: 100%;
+        background-image: linear-gradient(230deg,black, #0a061a,#0d40ad,#0a061a, black);
+        background-size: 100%;
+        background-attachment: fixed;
+        overflow-x: hidden;
+    }
+     li {
+    list-style:none;
+    }
+    img {
+        width: 100%;
+    }
+    header {
+        display: inline-block;
+        width: 104%;
+        background-color:  #e6e6e6;
+        background-attachment: fixed;
+    }
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+        margin-right: 2%;
+        margin-top: 2%;
+    }
+    
+     a {
+        margin-left: 2em;
+        text-decoration: none;
+        color: rgb(145, 12, 18);
+        font-family: 'Roboto Slab';
+        
+    }
+    /*a:hover {
+        background-color: rgb(27, 26, 26);
+        border-radius: 50%;
+        border: .3em solid rgba(0, 111, 202, 0.842);
+    }*/
+    main {
+        display: flex;
+        flex-direction:column;
+    }
+    h1, h3 {
+    text-align: center;
+    }
+    h3 {
+        font-family: 'Merienda';
+        margin-top: 5%;
+    }
+    h1 {
+        font-family: 'Mate SC';
+    }
+    p {
+        font-family: 'Josefin Sans';
+        padding: 5%;
+        line-height: 1.2em;
+        word-spacing: .4em;
+        text-align: center;
+    }
+    .banner {
+        text-align: center;
+    }
+    .banner h2 {
+     font-family: 'Courgette';
+     border-bottom: .2em double rgb(100, 2, 15);
+     border-bottom-left-radius:  50%;
+     border-bottom-right-radius: 50%;
+     box-shadow: 0 .2em 0 rgb(6, 125, 223);
+     padding: 10% 10% 5% 10%;
+     margin-bottom: 10%;
+     margin-top: 5%; 
+    
+    }
+    #employee figure {
+        width:20%;
+        height: auto;
+        margin-top: 2em;
+    }
+figcaption {
+    font-size: .75em;
+}
+    
+    footer nav {
+        width: 101.4%;
+        background-color: #e6e6e6;
+        padding: 1.3%;
+        border-top: solid .3em rgb(124, 9, 15);
+        
+    }
+    
+    footer p {
+        background-color:#3c414d;
+        font-family: 'Source Serif Pro';
+        text-align: left;
+        padding: 1% 2%;
+        width: 100%;
+        letter-spacing: .2em;
+        font-size: .7em;
+       
+    }
+    .decor {
+    opacity: .75;
+    }
+    .nav {
+        width: 10%;
+        float: left;
+    }
+    #company {
+        margin-top: 5%;
+        padding: 3%; 
+    }
+}
+/*Tablets and small note books*/
+@media only screen and (min-width:720px){
+ main p {
+     font-size:1.3em;
+ }
+ a {
+     font-size: 1.3em;
+ }
+ h3 {
+    font-size: 1.5em;
+} 
+h2 {
+    font-size: 1.8em;
+    text-align: center;
+}
+h1 {
+ font-size: 3em;
+}
+
+figcaption {
+font-size: 1em;
+}
+
+#employee figure {
+    width:20%;
+    height: auto;
+    margin-top: 2em;
+}
+figcaption {
+font-size: .9em;
+}
+
+footer nav {
+    width: 101.4%;
+    background-color: #e6e6e6;
+    padding: 1.3%;
+    border-top: solid .3em rgb(124, 9, 15);
+    
+}
+footer p {
+    background-color:#3c414d;
+    font-family: 'Source Serif Pro';
+    text-align: left;
+    padding: 1% 2%;
+    width: 100%;
+    letter-spacing: .2em;
+    font-size: .8em; 
+}
+/*desktop screen, including laptops*/
+@media only screen and (min-width:992px) {
+    footer p {
+        font-size: 1.5em;
+    }
+    main p {
+        font-size: 1.7em;
+    }
+    a {
+        font-size: 2em;
+    }
+    h3 {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 2.8em;
+    }
+    h1 {
+        font-size: 3.3em;
+    }
+    img {
+        margin-left:1em;
+    }
+    a:hover {
+        background-color: rgb(151, 151, 151);
+        border-radius: 50%;
+        border: .25em solid rgba(0, 111, 202, 0.842);
+    }
+    figcaption {
+        font-size: 1.3em;
+        word-spacing: .1em;
+        }
+    }
