@@ -1,0 +1,519 @@
+@font-face {
+    font-family:'Courgette';
+    src: url(https://fonts.gstatic.com/s/courgette/v8/wEO_EBrAnc9BLjLQAUk1VvoK.woff2) format('woff2');
+}
+    @font-face {
+    font-family:'Josefin Sans';
+    src: url(https://fonts.gstatic.com/s/josefinsans/v17/Qw3EZQNVED7rKGKxtqIqX5EUCEx6XHg.woff2) format('woff2');
+    src: url(https://fonts.gstatic.com/s/josefinsans/v17/Qw3EZQNVED7rKGKxtqIqX5EUCEx6XHg.woff2) format('woff2');
+    src: url(https://fonts.gstatic.com/s/josefinsans/v17/Qw3aZQNVED7rKGKxtqIqX5EUDXx4.woff2) format('woff2');
+    src: url(https://fonts.gstatic.com/s/josefinsans/v17/Qw3aZQNVED7rKGKxtqIqX5EUDXx4.woff2) format('woff2');
+    }
+    @font-face {
+     font-family:'Mate SC';
+    src: url(https://fonts.gstatic.com/s/matesc/v11/-nF8OGQ1-uoVr2wK-iLT9g.woff2) format('woff2');
+    }
+    @font-face {
+    font-family:'Merienda';
+    src: url(https://fonts.gstatic.com/s/merienda/v9/gNMHW3x8Qoy5_mf8uWMFMIo.woff2) format('woff2');
+    }
+    @font-face {
+    font-family:'Roboto Slab';
+    src: url(https://fonts.gstatic.com/s/robotoslab/v13/BngMUXZYTXPIvIBgJJSb6ufN5qU.woff2) format('woff2');
+    src: url(https://fonts.gstatic.com/s/robotoslab/v13/BngMUXZYTXPIvIBgJJSb6ufN5qU.woff2) format('woff2');
+    src: url(https://fonts.gstatic.com/s/robotoslab/v13/BngMUXZYTXPIvIBgJJSb6ufN5qU.woff2) format('woff2');
+    }
+    @font-face {
+    font-family:'Source Serif Pro';
+    src: url(https://fonts.gstatic.com/s/sourceserifpro/v11/neIWzD-0qpwxpaWvjeD0X88SAOeauXEOoguP.woff2) format('woff2');
+    src: url(https://fonts.gstatic.com/s/sourceserifpro/v11/neIVzD-0qpwxpaWvjeD0X88SAOeauXEGGS6axq0r.woff2) format('woff2');
+    src: url(https://fonts.gstatic.com/s/sourceserifpro/v11/neIQzD-0qpwxpaWvjeD0X88SAOeauXQ-oA.woff2) format('woff2');
+    src: url(https://fonts.gstatic.com/s/sourceserifpro/v11/neIXzD-0qpwxpaWvjeD0X88SAOeasc8btSyqxA.woff2) format('woff2')
+}
+/* basic format styles thougth for phone devices screen of 480 px*/
+* {
+    padding: 0;
+    margin: 0;
+    color: #e6e6e6;
+}
+html {
+    background-image: linear-gradient(230deg,black, #0a061a,#0d40ad,#0a061a, black);
+    font-size: 16px;
+    overflow-x: hidden;
+}
+body {
+    width: 100%;
+}
+
+.navigation {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    background-color: #e6e6e6;
+    flex-direction: row;
+    border-bottom: solid .3em rgb(145, 12, 18);
+}
+
+.logo-pic {
+    width: 6em;
+    height: auto;
+    padding: .3em;
+}
+
+.navbar {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    list-style: none;
+}
+
+.navbar >li {
+    margin-right: 2em;
+  
+}
+
+.navbar a {
+    font-size: 1.7em;
+    color: rgb(145, 12, 18);
+    font-family: 'Roboto Slab';
+    outline: none;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: rgb(27, 26, 26);
+    color: #e6e6e6;
+    padding: .5em;
+    border-radius: 50%;
+    border: .2em solid rgba(0, 111, 202, 0.842);
+}
+
+a:active {
+    text-decoration: none;
+}
+
+a:visited {
+    color: #1d0772;
+}
+
+a:visited:hover {
+    color: #e6e6e6;
+}
+
+#nav-foot {
+    border-top: solid .3em  rgb(145, 12, 18);
+    border-bottom: none;
+}
+
+main {
+    display: flex;
+    flex-direction:column;
+    background-color: rgba(13, 13, 14, 0.7);
+}
+h1, h3 {
+text-align: center;
+}
+h3 {
+    font-family: 'Merienda';
+    font-size: 1.5em;
+}
+h1 {
+    font-family: 'Mate SC';
+    font-size: 3em;
+}
+p {
+    font-family: 'Josefin Sans';
+    font-size: 1.3em;
+    padding: 5%;
+    line-height: 1.3em;
+    word-spacing: .4em;
+    text-align: center;
+    justify-content: center;
+    align-self: center;
+    padding-left: 7em;
+    padding-right: 7em;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+.siglas {
+    text-align: center;
+    margin-bottom: 2em ;
+    font-family: 'Mate SC';
+    letter-spacing: .13em;
+}
+.banner {
+    text-align: center;
+}
+.banner h2 {
+    font-family: 'Courgette';
+    font-size: 2em;
+    border-bottom: .2em double rgb(100, 2, 15);
+    border-bottom-left-radius:  50%;
+    border-bottom-right-radius: 50%;
+    box-shadow: 0 .2em 0 rgb(6, 125, 223);
+    padding: 10% 10% 5% 10%;
+    margin-bottom: 10%;
+}
+.main-pic {
+    width: 60%;
+    height: auto;
+    align-self: center;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+.team {
+    font-size: 2em;
+}
+
+#employee {
+    display:flex;
+    flex-grow: 1.2;
+    flex-shrink: 1;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.person {
+    margin-top: 5em;
+    margin-bottom: 4em;
+}
+
+.person img {
+    width: 15em;
+    height: auto;
+}
+
+figcaption {
+    font-family: 'Josefin Sans';
+    font-size: 1.1em;
+    text-align: center;
+    margin-left: 0;
+    width: 100%;
+    margin-top: 1em;
+    line-height: 1.5em;
+}
+
+footer {
+    width:100%;
+    background-color:#3c414d;
+}
+
+footer p {
+    font-family: 'Source Serif Pro';
+    text-align: left;
+    padding: 1% 2%;
+    width: 100%;
+   
+}
+.decor {
+opacity: .75;
+}
+.nav {
+    padding-top: .5em;
+    width: 10%;
+    float: left;
+}
+#company {
+    margin-top: 1%;
+    padding: 3%; 
+}
+
+/*
+star of media queries here in this area
+*/
+
+/*
+the problem with the content not covering all the area it seen to be solve by using body width 100% 
+google development tools have issues runing the simulation of screens, I started using mozilla
+for website styles.
+*/
+
+/*
+mediaquery for width 280px running on mozilla
+*/
+
+@media screen and (min-width:280px) and (max-width:290px){
+
+    html {
+
+   overflow-x: hidden;
+    }
+    body {
+        width: 100%;
+    }
+
+    .logo-pic {
+        width: 40%;
+        height: auto;
+       margin-left: 30%;
+       margin-top: .5em;
+       padding: 0;
+    }
+    .navigation a {
+       font-size: .7em;
+    }
+    .navigation ul {
+        margin-left: 2em;
+    }
+
+    .banner > h2 {
+        font-size: 1.2em;
+    }
+    main > h3 {
+        font-size: 1.1em;
+        margin-right: .7em;
+        margin-top: 1em;
+    }
+    .siglas {
+        margin-top: 1em;
+    }
+    .main-pic {
+        width: 80%;
+    }
+
+    main > p {
+        width: 80%;
+        font-size: .8em;
+        text-align: justify;
+        word-spacing: 0em;
+    }
+    .team {
+        font-size: 1.1em;
+        margin-bottom: 0;
+        padding: 0;
+    }
+    .person {
+        padding: 0;
+        margin: 1.3em 0;
+    } 
+    footer > p {
+        margin-left:0;
+        white-space:pre-line;
+        font-size: .7em;
+       
+    } 
+
+    figcaption {
+        margin-right: .7em;
+    }
+
+    #navfoot ul {
+      margin:0 1em;
+    }
+    }
+
+    /* mediaquerie from 355px to 365px */
+
+    @media screen and (min-width:355px) and (max-width:365px) {
+        html {
+            overflow-x: hidden;
+        }
+
+        body {
+            width:100%;
+        }
+
+        .logo-pic {
+            width:40%;
+            height: auto;
+            margin-left: 28%;
+        }
+
+        .navigation a {
+            font-size: 1em;
+        }
+
+        .navigation ul {
+            margin-left: 1em;
+        }
+
+        .main-pic {
+            width:90%;
+        }
+
+        main h3 {
+           margin-top: .5em;
+        }
+        .decor {
+            margin-top:.5em;
+        }
+
+        main p {
+            padding: 0;
+            margin-top: 1em;
+            text-align: left;
+        }
+
+        footer p {
+            margin-left: 0;
+            font-size: 1.2em;
+        }
+    }
+
+/*
+ It seems to be working on mozilla starting with a width of 375px and 384px
+*/
+
+    @media screen and (min-width:375px) and (max-width:385px) {
+
+        body {
+            width: 100%;
+        }
+
+        .navigation a {
+            font-size: 1.1em;
+        }
+        .navbar {
+            margin-left: 1em;
+        }
+        main > p {
+            width: 85%;
+            font-size: 1em;
+            margin-right:3em;
+            text-align: justify;
+            word-spacing: 0;
+        }
+        .logo-pic {
+            width: 30%;
+            margin-left: 35%;
+        }
+        main > h3 {
+            margin-top: 2em;
+        }
+        .main-pic {
+            width: 80%;
+        }
+        .team {
+            margin-top:0;
+            margin-bottom: 0;
+            padding:0;
+            font-size: 1.5em;
+        }
+        .person {
+            padding: 0;
+            margin-top: 1.3em;
+        }
+        .person img {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        footer p {
+             margin-left: 0;
+             font-size: 1em;
+        }
+        
+    }
+
+    /*
+    Media queries from 390px to 400px
+    */
+    
+    @media screen and (min-width:390px) and (max-width:400px) {
+
+        html {
+          overflow-x: hidden;
+        }
+
+        .navigation a {
+            font-size: 1.2em;
+        }
+        .navigation ul {
+            margin-left: 1.2em;
+        }
+        .logo-pic {
+            width: 40%;
+            margin-left: 28%;
+        }
+        .main-pic {
+            width:95%;
+        }
+        main > h3 {
+            margin-top: 2em;
+        }
+        main > p {
+            width: 90%;
+            text-align: justify;
+            word-spacing: 0;
+        } 
+        .team {
+            margin-top:0;
+            margin-bottom: 0;
+            padding:0;
+            font-size: 1.8em;
+        }
+        .person {
+            padding: 0;
+            margin-top: 1.3em;
+        }
+        .person img {
+            margin-top: 0;
+            margin-bottom: 0;
+            margin-left: 2em;
+        }
+        figcaption {
+            font-size: 1.3em;
+        }
+        footer p {
+             margin-left: 0;
+             font-size: 1.2em;
+        }
+    }
+        /*
+        width from 412px to 428px
+        */
+
+        @media screen and (min-width:412px) and (max-width: 428px) {
+            html {
+                overflow-x: hidden;
+            }
+
+            body {
+                width: 100%;
+            }
+
+            .navigation a {
+                font-size: 1.3em;
+            }
+            
+            .navigation ul {
+                margin-left: 1em;
+            }
+
+            .logo-pic {
+                width: 37%;
+                height: auto;
+                margin-left: 27%;
+            }
+
+            .main-pic {
+                width: 82%;
+                height: auto;
+            }
+
+            .decor {
+                margin-bottom: 1em;
+            }
+
+            main h3 {
+                margin-bottom: 1em;
+            }
+
+
+            main p {
+                text-align: left;
+                padding: 0;
+                margin-bottom: 1em;
+            }
+            footer p {
+                margin-left: 0;
+                font-size: .8em;
+            }
+        }
+    
+
+
+
+
+    
